@@ -201,17 +201,37 @@
                         A daily formula designed to support energy, strength and male well-being.
                     </p>
                     
-                    <!-- Mobile Only CTA (Black Button) -->
-                    <div class="md:hidden w-full mt-6">
-                        <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="w-full btn-top-bar text-white font-black text-lg py-4 rounded-lg shadow-lg uppercase tracking-wide">
-                            <span data-i18n="cta_button">GET SPECIAL OFFER + FREE EU SHIPPING</span>
-                        </button>
-                    </div>
+                    <!-- Mobile CTA REMOVED from here -->
                 </div>
 
-                <div class="w-full max-w-[540px] md:max-w-[780px] flex justify-center md:justify-end relative">
+                <div class="w-full max-w-[540px] md:max-w-[780px] flex flex-col items-center md:items-end relative">
                     <div class="absolute inset-0 bg-brand-pink/30 blur-[60px] rounded-full transform scale-75"></div>
                     <img src="https://i.imgur.com/7hKBvwf.png" alt="TestoLink Bottle" class="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 object-contain">
+                    
+                    <!-- Mobile Only CTA (Black Button) MOVED HERE -->
+                    <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="md:hidden w-full btn-top-bar text-white font-black text-lg py-4 rounded-lg shadow-lg uppercase tracking-wide mt-6 relative z-20">
+                        <span data-i18n="cta_button">GET SPECIAL OFFER + FREE EU SHIPPING</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. CONTENT & SOCIAL PROOF (Hidden on Mobile) -->
+        <div class="container mx-auto px-4 py-6 md:py-10 max-w-5xl hidden md:block">
+            <div class="grid md:grid-cols-1 gap-8">
+                <div>
+                    <!-- 6. CALL TO ACTION (BLUE BUTTON for this section) -->
+                    <div class="w-full mb-10">
+                        <!-- Botão Azul Marinho Profundo -->
+                        <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="w-full bg-[#0B1E3D] hover:bg-[#1a2f55] text-white font-black text-xl md:text-3xl py-5 rounded-lg shadow-lg uppercase tracking-wide mb-4 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                            <span data-i18n="cta_button">GET SPECIAL OFFER + FREE EU SHIPPING</span>
+                        </button>
+                        
+                        <div class="flex items-center justify-center gap-3 text-gray-500 text-sm font-medium">
+                            <i class="fas fa-undo-alt text-blue-700"></i>
+                            <span class="text-center" data-i18n="cta_guarantee">Try TestoLink with a 30-Day Money-Back Guarantee.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -436,6 +456,7 @@
                 hero_title: "Europe’s #1 Natural Support for Male Vitality & Performance",
                 hero_subtitle: "A daily formula designed to support energy, strength and male well-being.",
                 cta_button: "GET SPECIAL OFFER + FREE EU SHIPPING", 
+                cta_guarantee: "Try TestoLink with a 30-Day Money-Back Guarantee.",
                 select_title: "Select Your Country to Unlock Today’s Best TestoLink Offer",
                 select_subtitle: "Receive the lowest price in your region, in your local currency, with the fastest delivery available.",
                 stock_low: "Low Stock Alert",
@@ -458,6 +479,7 @@
                 hero_title: "Suporte Natural #1 da Europa para Vitalidade e Desempenho Masculino",
                 hero_subtitle: "Uma fórmula diária projetada para apoiar energia, força e bem-estar masculino.",
                 cta_button: "GARANTA OFERTA ESPECIAL + FRETE GRÁTIS",
+                cta_guarantee: "Experimente TestoLink com Garantia de Reembolso de 30 Dias.",
                 select_title: "Selecione Seu País para Desbloquear a Melhor Oferta TestoLink",
                 select_subtitle: "Receba o menor preço da sua região, na moeda local, com a entrega mais rápida disponível.",
                 stock_low: "Alerta de Estoque Baixo",
@@ -480,6 +502,7 @@
                 hero_title: "Europas Nr. 1 Natürliche Unterstützung für Männliche Vitalität & Leistung",
                 hero_subtitle: "Eine tägliche Formel zur Unterstützung von Energie, Kraft und männlichem Wohlbefinden.",
                 cta_button: "SONDERANGEBOT SICHERN + KOSTENLOSER VERSAND",
+                cta_guarantee: "Testen Sie TestoLink mit 30-Tage-Geld-zurück-Garantie.",
                 select_title: "Wählen Sie Ihr Land, um das Beste TestoLink-Angebot freizuschalten",
                 select_subtitle: "Erhalten Sie den niedrigsten Preis in Ihrer Region, in lokaler Währung, mit der schnellsten verfügbaren Lieferung.",
                 stock_low: "Niedriger Lagerbestand",
@@ -502,6 +525,7 @@
                 hero_title: "Europa's #1 Natuurlijke Ondersteuning voor Mannelijke Vitaliteit & Prestaties",
                 hero_subtitle: "Een dagelijkse formule ontworpen om energie, kracht en mannelijk welzijn te ondersteunen.",
                 cta_button: "KRIJG SPECIALE AANBIEDING + GRATIS VERZENDING",
+                cta_guarantee: "Probeer TestoLink met 30 Dagen Geld-Terug-Garantie.",
                 select_title: "Selecteer Uw Land om de Beste TestoLink Aanbieding te Ontgrendelen",
                 select_subtitle: "Ontvang de laagste prijs in uw regio, in lokale valuta, met de snelst beschikbare levering.",
                 stock_low: "Waarschuwing Lage Voorraad",
@@ -524,6 +548,7 @@
                 hero_title: "Europas #1 Naturliga Stöd för Manlig Vitalitet & Prestation",
                 hero_subtitle: "En daglig formel utformad för att stödja energi, styrka och manligt välbefinnande.",
                 cta_button: "FÅ SPECIALERBJUDANDE + FRI FRAKT",
+                cta_guarantee: "Prova TestoLink med 30 Dagars Pengarna-Tillbaka-Garanti.",
                 select_title: "Välj Ditt Land för att Låsa Upp Dagens Bästa TestoLink-erbjudande",
                 select_subtitle: "Få det lägsta priset i din region, i lokal valuta, med den snabbaste tillgängliga leveransen.",
                 stock_low: "Varning Lågt Lager",
@@ -546,6 +571,7 @@
                 hero_title: "Europas #1 Naturlige Støtte til Mandlig Vitalitet & Ydeevne",
                 hero_subtitle: "En daglig formel designet til at støtte energi, styrke og mandligt velvære.",
                 cta_button: "FÅ SPECIALTILBUD + GRATIS FRAGT",
+                cta_guarantee: "Prøv TestoLink med 30 Dages Pengene-Tilbage-Garanti.",
                 select_title: "Vælg Dit Land for at Låse Op for Dagens Bedste TestoLink Tilbud",
                 select_subtitle: "Få den laveste pris i din region, i lokal valuta, med den hurtigste levering tilgængelig.",
                 stock_low: "Advarsel Lav Beholdning",
@@ -568,6 +594,7 @@
                 hero_title: "Europejski Numer 1: Naturalne Wsparcie Męskiej Witalności i Wydajności",
                 hero_subtitle: "Codzienna formuła stworzona, by wspierać energię, siłę i męskie samopoczucie.",
                 cta_button: "ODBIERZ OFERTĘ SPECJALNĄ + DARMOWA WYSYŁKA",
+                cta_guarantee: "Wypróbuj TestoLink z 30-dniową gwarancją zwrotu pieniędzy.",
                 select_title: "Wybierz Swój Kraj, aby Odblokować Najlepszą Ofertę TestoLink",
                 select_subtitle: "Otrzymaj najniższą cenę w swoim regionie, w lokalnej walucie, z najszybszą dostępną dostawą.",
                 stock_low: "Alarm Niskiego Stanu",
