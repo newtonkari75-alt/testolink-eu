@@ -121,15 +121,15 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
         }
-        /* Botão da Top Bar Preto (solicitado anteriormente) */
-        .btn-top-bar {
-            background-color: #000000;
+        /* Botão Mobile Personalizado - Azul Vibrante */
+        .btn-mobile-cta {
+            background-color: #2563eb; /* Azul Vibrante para contraste */
             transition: all 0.3s ease;
         }
-        .btn-top-bar:hover {
-            background-color: #333333;
+        .btn-mobile-cta:hover {
+            background-color: #1d4ed8;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
         }
     </style>
 </head>
@@ -200,16 +200,14 @@
                     <p class="text-gray-200 text-lg md:text-xl font-medium max-w-md leading-relaxed hero-shadow mb-6" data-i18n="hero_subtitle">
                         A daily formula designed to support energy, strength and male well-being.
                     </p>
-                    
-                    <!-- Mobile CTA REMOVED from here -->
                 </div>
 
                 <div class="w-full max-w-[540px] md:max-w-[780px] flex flex-col items-center md:items-end relative">
                     <div class="absolute inset-0 bg-brand-pink/30 blur-[60px] rounded-full transform scale-75"></div>
                     <img src="https://i.imgur.com/7hKBvwf.png" alt="TestoLink Bottle" class="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 object-contain">
                     
-                    <!-- Mobile Only CTA (Black Button) MOVED HERE -->
-                    <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="md:hidden w-full btn-top-bar text-white font-black text-lg py-4 rounded-lg shadow-lg uppercase tracking-wide mt-6 relative z-20">
+                    <!-- Mobile Only CTA - REFEITO: Cor Azul Vibrante e Texto Menor -->
+                    <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="md:hidden w-full btn-mobile-cta text-white font-bold text-sm py-3.5 rounded-lg shadow-xl uppercase tracking-wide mt-4 relative z-20 border border-white/10">
                         <span data-i18n="cta_button">GET SPECIAL OFFER + FREE EU SHIPPING</span>
                     </button>
                 </div>
@@ -220,17 +218,12 @@
         <div class="container mx-auto px-4 py-6 md:py-10 max-w-5xl hidden md:block">
             <div class="grid md:grid-cols-1 gap-8">
                 <div>
-                    <!-- 6. CALL TO ACTION (BLUE BUTTON for this section) -->
+                    <!-- 6. CALL TO ACTION (BLUE BUTTON for this section) - DISCREET VERSION -->
                     <div class="w-full mb-10">
-                        <!-- Botão Azul Marinho Profundo -->
-                        <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="w-full bg-[#0B1E3D] hover:bg-[#1a2f55] text-white font-black text-xl md:text-3xl py-5 rounded-lg shadow-lg uppercase tracking-wide mb-4 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl">
+                        <!-- Botão Desktop - Texto menor e mais discreto -->
+                        <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="w-full bg-[#0B1E3D] hover:bg-[#1a2f55] text-white font-bold text-lg py-4 rounded shadow-md uppercase tracking-wide mb-0 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
                             <span data-i18n="cta_button">GET SPECIAL OFFER + FREE EU SHIPPING</span>
                         </button>
-                        
-                        <div class="flex items-center justify-center gap-3 text-gray-500 text-sm font-medium">
-                            <i class="fas fa-undo-alt text-blue-700"></i>
-                            <span class="text-center" data-i18n="cta_guarantee">Try TestoLink with a 30-Day Money-Back Guarantee.</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -330,8 +323,8 @@
                 
                 <div class="flex flex-col justify-center items-center gap-10 mb-12">
                     <div class="max-w-2xl text-center">
-                        <div class="inline-block font-black text-xl text-brand-dark italic mb-4">TESTOLINK</div>
-                        <p class="text-sm leading-relaxed text-slate-500" data-i18n="footer_story">
+                        <div class="inline-block font-black text-lg text-brand-dark italic mb-3 opacity-80">TESTOLINK</div>
+                        <p class="text-[10px] leading-relaxed text-slate-400 max-w-lg mx-auto" data-i18n="footer_story">
                             TestoLink foi desenvolvido na Europa para homens que desejam manter energia, vitalidade e bem-estar diário. Com ingredientes estudados e produção certificada na UE, TestoLink oferece suporte simples e confiável para quem busca se sentir no seu melhor todos os dias.
                         </p>
                     </div>
@@ -582,7 +575,7 @@
                 link_privacy: "Privatlivspolitik",
                 link_terms: "Servicevilkår",
                 link_refund: "Refusionspolitik",
-                secure_checkout: "Sikker Betaling",
+                secure_checkout: "Sikker Betalning",
                 back_home: "Tilbage til Start"
             },
             pl: {
