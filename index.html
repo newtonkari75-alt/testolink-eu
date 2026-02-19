@@ -190,26 +190,39 @@
             <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
             
             <div class="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8 py-12 md:py-0">
-                <div class="max-w-xl">
-                    <div class="inline-block bg-brand-pink text-white text-[10px] font-bold px-2 py-1 mb-3 uppercase tracking-wider rounded-sm shadow-lg" data-i18n="hero_badge">
-                        European Formula
+                <div class="w-full max-w-xl flex flex-col">
+                    
+                    <!-- 1. Badge & Title -->
+                    <div class="mb-4">
+                        <div class="inline-block bg-brand-pink text-white text-[10px] font-bold px-2 py-1 mb-3 uppercase tracking-wider rounded-sm shadow-lg" data-i18n="hero_badge">
+                            European Formula
+                        </div>
+                        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] hero-shadow" data-i18n="hero_title">
+                            Europe’s #1 Natural Support for Male Vitality & Performance
+                        </h1>
                     </div>
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.1] hero-shadow mb-4" data-i18n="hero_title">
-                        Europe’s #1 Natural Support for Male Vitality & Performance
-                    </h1>
+
+                    <!-- 2. Product Photo (MOBILE ONLY - VISIBLE ON MOBILE) -->
+                    <div class="md:hidden w-full flex justify-center my-6 relative">
+                        <div class="absolute inset-0 bg-brand-pink/30 blur-[60px] rounded-full transform scale-75"></div>
+                        <img src="https://i.imgur.com/7hKBvwf.png" alt="TestoLink Bottle" class="relative z-10 w-2/3 h-auto drop-shadow-2xl object-contain">
+                    </div>
+
+                    <!-- 3. Text (Subtitle) -->
                     <p class="text-gray-200 text-lg md:text-xl font-medium max-w-md leading-relaxed hero-shadow mb-6" data-i18n="hero_subtitle">
                         A daily formula designed to support energy, strength and male well-being.
                     </p>
-                </div>
-
-                <div class="w-full max-w-[540px] md:max-w-[780px] flex flex-col items-center md:items-end relative">
-                    <div class="absolute inset-0 bg-brand-pink/30 blur-[60px] rounded-full transform scale-75"></div>
-                    <img src="https://i.imgur.com/7hKBvwf.png" alt="TestoLink Bottle" class="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 object-contain">
                     
-                    <!-- Mobile Only CTA - REFEITO: Cor Azul Vibrante e Texto Menor/Curto -->
-                    <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="md:hidden w-full btn-mobile-cta text-white font-bold text-sm py-3.5 rounded-lg shadow-xl uppercase tracking-wide mt-4 relative z-20 border border-white/10">
+                    <!-- 4. Mobile CTA (MOBILE ONLY - VISIBLE ON MOBILE) -->
+                    <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="md:hidden w-full btn-mobile-cta text-white font-bold text-sm py-3.5 rounded-lg shadow-xl uppercase tracking-wide border border-white/10">
                         <span data-i18n="cta_button">ORDER NOW</span>
                     </button>
+                </div>
+
+                <!-- Right Side Image (DESKTOP ONLY) -->
+                <div class="hidden md:flex w-full max-w-[540px] md:max-w-[780px] flex-col items-end relative">
+                    <div class="absolute inset-0 bg-brand-pink/30 blur-[60px] rounded-full transform scale-75"></div>
+                    <img src="https://i.imgur.com/7hKBvwf.png" alt="TestoLink Bottle" class="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 object-contain">
                 </div>
             </div>
         </div>
